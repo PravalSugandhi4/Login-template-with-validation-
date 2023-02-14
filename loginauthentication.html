@@ -1,0 +1,57 @@
+<!--submit ka pahela false ko true karna ha -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login authentication</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="alert">
+  <p id="para">
+
+  </p>
+</div>
+    <div class="cen">
+    <form name="myform" method="post" onsubmit="return vali()" > 
+     <h2 id="Login"> Login  </h2>
+    <input type="text" name="id" id="id" placeholder="Email / Username" ><br>
+    <input type="password" name="pass" id="pass" placeholder="Password" ><br>
+    <button type="Submit" value="register" >Login</button><br><br>
+    <p class="register">Not a member? &nbsp <a href="#">Register here!</a></p>
+    </form>   
+    </div>
+    <script rel="stylesheet/js">
+function vali() {
+  const x = document.getElementById('id').value;
+  const y = document.getElementById('pass').value;  
+  if (x == "") {
+    document.getElementById('para').innerHTML=" Email / Username must be filled out";
+    return false;
+  }
+  else if(y == "")
+  {
+    document.getElementById('para').innerHTML="Passward must be filled out";
+    return false;
+  }
+  else if(x=="Praval12345" && y=="123456")
+  {
+
+    document.getElementById('para').innerHTML="Login sucessful";
+     return false;
+  }
+  else
+  {
+    document.getElementById('para').innerHTML="Incorrect username or passward";
+    return false;
+  }
+
+ 
+}
+
+    </script>
+
+</body>
+</html>

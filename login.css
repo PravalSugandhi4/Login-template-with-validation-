@@ -1,0 +1,87 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial; 
+  background: -webkit-linear-gradient(to right, #155799, #1f6341); 
+  background: linear-gradient(to right, #25215f, #804372); 
+  color:whitesmoke;
+}
+
+
+input
+{
+  width: 100%;
+  margin: 20px 0;
+    border-radius: 5px;
+    padding: 18px 18px;
+    box-sizing: border-box;
+}
+.cen
+{
+    padding-top: 3.5cm;
+}
+form{
+    padding: 1.5cm 2cm 2cm 2cm;
+    width:35rem;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(47, 53, 50, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+   
+}
+button {
+    background-color: #6d7a70;
+    color:whitesmoke;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+  button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    border-color:white ;
+  }
+  .register{
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .register a{
+    color: rgb(74, 146, 235);
+  }
+  
+  
+  h2
+  {
+    text-align: center;
+    color:whitesmoke;
+  }
+  #para
+  {
+    padding-top:1.5cm;
+    font-size: 22px;
+    text-align: center
+  }
+
+  /*
+  To make responsive login page on different screen resolutions
+  */
+  @media screen and (max-width: 600px) {
+    form{
+      width: 25rem;
+    }
+  
+  }
+  
+  @media screen and (max-width: 400px) {
+    form{
+      width: 20rem;
+    }
+  }
